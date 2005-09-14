@@ -1,0 +1,2 @@
+var_append CFGTEMP_TARGETLIST ' ' "sheba Sheba,_the_city_of_tux_(TRUNK)"
+
