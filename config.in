@@ -13,12 +13,11 @@
 # GNU General Public License can be found in the file COPYING.
 # --- T2-COPYRIGHT-NOTE-END ---
 
-mnemosyne_prefix=TRG_MNEMOSYNE
-
 for x in VSERVER=1 GRSECURITY=0 KERNEL='linux' LVM=1	\
 	SSP=1; do
-	eval export SDECFG_${mnemosyne_prefix}_$x \
-		 SDECFGSET_${mnemosyne_prefix}_$x
+
+	eval SDECFGSET_TRG_MNEMOSYNE_$x
+	const SDECFG_TRG_MNEMOSYNE_${x/=/ }
 done
 
 menu_begin MENU_SHEBA 'Advanced Options'
