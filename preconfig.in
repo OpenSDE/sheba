@@ -12,5 +12,5 @@
 # GNU General Public License can be found in the file COPYING.
 # --- T2-COPYRIGHT-NOTE-END ---
 
-var_append CFGTEMP_TARGETLIST ' ' "sheba Sheba,_the_city_of_tux_(TRUNK)"
+var_append CFGTEMP_TARGETLIST ' ' "sheba Sheba,_the_realm_of_Tux_(TRUNK)"
 
