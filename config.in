@@ -20,5 +20,5 @@ for x in VSERVER=1 GRSECURITY=0 KERNEL='linux' LVM=1	\
 	const SDECFG_TRG_MNEMOSYNE_${x/=/ }
 done
 
-menu_begin MENU_SHEBA 'Advanced Options'
+menu_begin MENU_MNEMOSYNE 'Advanced Options'
 
