@@ -13,7 +13,7 @@
 # GNU General Public License can be found in the file COPYING.
 # --- T2-COPYRIGHT-NOTE-END ---
 
-for x in VSERVER=1 GRSECURITY=0 KERNEL='linux' LVM=1	\
+for x in VSERVER=1 SECURITY=none KERNEL='linux' LVM=1	\
 	SSP=1; do
 
 	eval SDECFGSET_TRG_MNEMOSYNE_$x
