@@ -16,7 +16,8 @@
 #Description: Sheba, the realm of Tux
 
 for x in VSERVER=1 SECURITY=none KERNEL='linux' LVM=1	\
-	SSP=1; do
+	SSHD=dropbear DHCP=udhcp MTA=nullmailer SNORT=1 \
+	PAM=0 IDS=1 SSP=1; do
 
 	eval SDECFGSET_TRG_MNEMOSYNE_$x
 	const SDECFG_TRG_MNEMOSYNE_${x/=/ }
