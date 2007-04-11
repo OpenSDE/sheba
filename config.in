@@ -25,5 +25,9 @@ for x in VSERVER=1 SECURITY=none KERNEL='linux' LVM=1	\
 	const SDECFG_TRG_MNEMOSYNE_${x/=/ }
 done
 
+for x in JAVA F77 OBJC; do
+	eval SDECFGSET_PKG_GCC_$x=0
+done
+
 menu_begin MENU_MNEMOSYNE 'Advanced Options'
 
