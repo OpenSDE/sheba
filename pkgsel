@@ -1,2 +1,4 @@
 # please rsync
 X rsync
+# mpfr needed by 0-gcc
+X mpfr
