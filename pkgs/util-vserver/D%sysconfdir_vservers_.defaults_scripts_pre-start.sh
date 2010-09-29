@@ -35,4 +35,12 @@ if grep -q '[ 	]/dev[ 	]' "$__CONFDIR/$2/fstab"; then
 	for x in .defaults "$2"; do
 		[ ! -d "$__CONFDIR/$x/dev" ] || install_nodes "$__CONFDIR/$x/dev"
 	done
+
+	# mount devpts after /dev was populated
+	#
+	$_SECURE_MOUNT -t devpts -o gid=5,mode=620,dev --chroot none dev/pts
+
+	# 144 is what qemu wants... I know it's wrong to hardcode this here, but
+	# I don't have the time for a better implementation (fstab) yet
+	$_SECURE_MOUNT -t tmpfs -o size=144m --chroot none dev/shm
 fi
