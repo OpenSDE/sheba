@@ -25,6 +25,8 @@ for x in VSERVER=1 SECURITY=none KERNEL='linux' \
 #	const SDECFG_TRG_MNEMOSYNE_${x/=/ }
 done
 
+const SDECFG_TRG_SHEBA ${target:-$SDECFG_TARGET}
+
 for x in JAVA F77 OBJC; do
 	eval SDECFGSET_PKG_GCC_$x=0
 done
