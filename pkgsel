@@ -2,3 +2,5 @@
 X rsync
 # mpfr needed by 0-gcc
 X mpfr
+# no more busybox
+O busybox
