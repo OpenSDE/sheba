@@ -4,3 +4,7 @@ X rsync
 X mpfr
 # no more busybox
 O busybox
+# debianand derivative vserver guests
+X debootstrap
+# makedev needed by debootstrap
+X makedev
